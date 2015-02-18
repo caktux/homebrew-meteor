@@ -20,7 +20,7 @@ class Meteor < Formula
 
     system "./scripts/generate-dev-bundle.sh" if build.head?
 
-    prefix.install Dir["*"]
+    prefix.install Dir["meteor/*"]
     bin.install_symlink prefix/"meteor"
   end
 
